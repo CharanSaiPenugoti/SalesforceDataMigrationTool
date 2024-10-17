@@ -1,0 +1,129 @@
+.Main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.TitleBar {
+    width: 80%;
+    margin: 15px;
+    text-align: center;
+}
+
+.Title {
+    margin-top: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.LoginBar {
+    width: 90%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.IntroBar {
+    width: 50%;
+}
+
+.Welcome {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+}
+
+.LoginPage {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginFrame {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.LoginDiv {
+    margin: 5px;
+}
+
+.textlabel {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+input {
+    margin-top: 10px;
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+}
+
+.ButtonFrame {
+    width: 400px;
+    margin-top: 8px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SubmitButton {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(84, 177, 240);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.SubmitButton:hover {
+    color: white;
+    background-color: rgb(28, 245, 28);
+    font-weight: 500;
+}
+
+.Details {
+    margin: 5px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .LoginBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .LoginFrame {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .LoginDiv input {
+        width: 100%;
+    }
+
+    .ButtonFrame {
+        width: 100%;
+    }
+}

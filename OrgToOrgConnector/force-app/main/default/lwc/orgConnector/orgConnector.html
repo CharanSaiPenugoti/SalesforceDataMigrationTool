@@ -1,0 +1,49 @@
+<template>
+    <div class="Main">
+        <div class="TitleBar">
+            <span class="Title">
+                <strong>ORGCONNECTOR</strong>
+            </span>
+            <span class="SubTitle">
+                <h1>Migrate Data from Org to Org</h1>
+            </span>
+        </div>
+        <div class="LoginBar">
+            <div class="IntroBar">
+                <span class="Welcome">Welcome</span>
+                <div class="Description">
+                    <h1>To connect to the target Salesforce org for data migration, please enter the following:</h1>
+                    <ol class="Details">
+                        <li><strong>Consumer Key</strong>: The key from the Connected App in the target org.</li>
+                        <li><strong>Consumer Secret</strong>: The secret key from the same Connected App.</li>
+                        <li><strong>Username</strong>: The Salesforce account's username for the target org.</li>
+                        <li><strong>Password</strong>: The account's password for authentication.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="LoginPage">
+                <div class="LoginFrame">
+                    <div class="LoginDiv">
+                        <h1 class="textlabel">Target's Username</h1>
+                        <lightning-input label="Username"></lightning-input>
+                    </div>
+                    <div class="LoginDiv">
+                        <h1 class="textlabel">Target's Password</h1>
+                        <lightning-input label="Password" type="password"></lightning-input>
+                    </div>
+                    <div class="LoginDiv">
+                        <h1 class="textlabel">Target's Consumer Key</h1>
+                        <lightning-input label="Consumer Key"></lightning-input>
+                    </div>
+                    <div class="LoginDiv">
+                        <h1 class="textlabel">Target's Consumer Secret Key</h1>
+                        <lightning-input label="Consumer Secret Key"></lightning-input>
+                    </div>
+                    <div class="ButtonFrame">
+                        <lightning-button label="Connect"></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
